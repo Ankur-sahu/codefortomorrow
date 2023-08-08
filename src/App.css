@@ -1,38 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  background-color: skyblue;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.card-container{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  display: flex ;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  gap: 10px;
+
+}
+.wraper{
+  width: 30%;
+  position: relative;
+  padding: 5px 10px;
+}
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: red;
+}
+.post-card {
+  width: 100%;
+  height: 250px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 2px 2px 1px black;
+  background-color: aliceblue;
+  border-radius: 10px;
+  gap: 5px;
+  text-align: center;
+}
+.post-card>img{
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+}
+.post-card>h1{
+  padding: 0px 20px;
+  font-size: 16px;
+}
+.pagination{
+  width: 50%;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* border: 1px solid black; */
+}
+.page-num{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
 }
